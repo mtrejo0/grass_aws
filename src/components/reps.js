@@ -39,6 +39,7 @@ class Reps extends React.Component {
         this.addMessage(res.data.message)
       })
       .catch((error) => {
+        console.log(error)
         this.addError(error.response.data.error)
       })
       .then(() => {
